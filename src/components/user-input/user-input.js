@@ -1,17 +1,20 @@
 import React, {Component}  from 'react';
-
+import marked from 'marked';
 export default class UserInput extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      markdown: 'Test'
+      text: 'Test',
     };
   }
 
   handleChange = (event) => {
+    let markedText = marked(event.target.value);
+    document.getElementById('preview').innerHTML = markedText;
+
     this.setState({
-      markdown: event.target.value
+      text: event.target.value,
     });
   }
 
@@ -21,12 +24,13 @@ export default class UserInput extends Component {
         <div className="input-box">
           <textarea
             type="text"
-            value={this.state.markdown}
+            id="editor"
+            value={this.state.text}
             onChange={(event) => this.handleChange(event)}
           />
         </div>
 
-        <div className="preview-box">{this.state.markdown}</div>
+        <div id="preview" className="preview-box"></div>
       </div>
     );
 	}

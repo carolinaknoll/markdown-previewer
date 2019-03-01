@@ -6,7 +6,7 @@ import Footer from '../components/common/footer';
 export default class MarkdownPreviewer extends Component {
   render() {
     return (
-      <div class="nightly-theme">
+      <div className="nightly-theme">
         <div className="content-container">
           <Header />
           <UserInput />

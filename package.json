@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/carolinaknoll/markdown-previewer#readme",
   "dependencies": {
+    "marked": "^0.6.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^4.3.1"
