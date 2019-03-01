@@ -1,0 +1,28 @@
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.input-box,
+.preview-box {
+  border: 1px solid #FFF;
+  display: inline-block;
+  height: 600px;
+  width: 400px;
+}
+
+.input-box {
+  margin-right: 20px;
+}
+
+.input-container textarea {
+  background: #000;
+  border: none;
+  box-sizing: border-box;
+  color: #FFF;
+  font-family: 'Titillium Web', sans-serif;
+  height: 99%;
+  resize: none;
+  width: 100%;
+}
