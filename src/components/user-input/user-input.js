@@ -34,12 +34,24 @@ export default class UserInput extends Component {
     };
   }
 
-  handleChange = (event) => {
+  setupCustomMarked() {
     let customMarked = marked;
 
     customMarked.setOptions({
       breaks: true,
     });
+
+    return customMarked;
+  }
+
+  componentDidMount() {
+    let customMarked = this.setupCustomMarked();
+    let preview = document.getElementById('preview');
+    preview.innerHTML = customMarked(this.state.text);
+  }
+
+  handleChange = (event) => {
+    let customMarked = this.setupCustomMarked();
 
     let markedText = customMarked(event.target.value);
     document.getElementById('preview').innerHTML = markedText;
