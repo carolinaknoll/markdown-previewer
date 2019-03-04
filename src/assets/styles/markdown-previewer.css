@@ -6,9 +6,11 @@ body {
   flex-direction: column;
   font-family: 'Titillium Web', sans-serif;
   min-height: 100vh;
+  height: 100%;
 }
 
 .content-container {
   flex: 1 0 auto;
+  margin-bottom: 50px;
   width: 100%;
 }
