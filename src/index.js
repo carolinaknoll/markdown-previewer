@@ -8,12 +8,7 @@ import MarkdownPreviewer from './containers/markdown-previewer';
 
 ReactDOM.render(
   <HashRouter>
-    <div>
-      <Route exact path='/' component={MarkdownPreviewer} />
-      <Switch>
-        <Route path='/markdown-previewer' components={MarkdownPreviewer} />
-      </Switch>
-    </div>
+    <Route exact path='/' component={MarkdownPreviewer} />
   </HashRouter>,
   document.getElementById('root'),
 );
