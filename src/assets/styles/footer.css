@@ -1,6 +1,5 @@
 .brightly-theme .footer-top {
   background: #eceff1;
-  border-top: 1px solid #FFF;
 }
 
 .brightly-theme .footer-bottom {
@@ -19,6 +18,11 @@
   flex-shrink: 0;
 }
 
+.footer-top,
+.footer-bottom {
+  transition: 1s;
+}
+
 .footer-top {
   min-height: 100px;
   width: 100%;
@@ -32,6 +36,7 @@
 .footer p {
   font-size: 20px;
   text-align: center;
+  margin: 0;
 }
 
 .footer .social-list {
@@ -40,10 +45,6 @@
 
 .footer-bottom p {
   padding-top: 15px;
-}
-
-.footer-bottom p:hover .fa {
-  animation: tada 1s infinite;
 }
 
 .footer-bottom .fa {

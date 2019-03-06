@@ -1,7 +1,5 @@
 body {
-  background: #030305;
   box-sizing: border-box;
-  color: #FFF;
   display: flex;
   flex-direction: column;
   font-family: 'Titillium Web', sans-serif;
@@ -9,8 +7,40 @@ body {
   height: 100%;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 .content-container {
   flex: 1 0 auto;
   margin-bottom: 50px;
+  height: 100%;
   width: 100%;
+}
+
+.nightly-theme {
+  background: #030305;
+  color: #FFF;
+}
+
+.brightly-theme {
+  background: #cfd8dc;
+  color: #000;
+}
+
+.nightly-theme,
+.brightly-theme {
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+}
+
+.toggle-theme {
+  text-align: center;
+}
+
+.toggle-theme .fa {
+  margin-left: 10px;
 }
