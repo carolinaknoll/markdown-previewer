@@ -1,22 +1,22 @@
 body {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   font-family: 'Titillium Web', sans-serif;
   min-height: 100vh;
-  height: 100%;
 }
 
 html, body {
   height: 100%;
-  width: 100%;
   margin: 0;
+  width: 100%;
+}
+
+a {
+  color: #CC4949;
 }
 
 .content-container {
-  flex: 1 0 auto;
-  margin-bottom: 50px;
   height: 100%;
+  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -37,8 +37,26 @@ html, body {
   transition: 1s;
 }
 
-.toggle-theme {
+.toggle-theme-container {
   text-align: center;
+}
+
+.nightly-theme .toggle-theme {
+  background: #1d2129;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.brightly-theme .toggle-theme {
+  background: #eceff1;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.toggle-theme {
+  padding: 10px;
+  transition: 1s;
+  margin: 20px;
 }
 
 .toggle-theme .fa {

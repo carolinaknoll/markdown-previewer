@@ -21,22 +21,21 @@
 .footer-top,
 .footer-bottom {
   transition: 1s;
+  width: 100%;
 }
 
 .footer-top {
   min-height: 100px;
-  width: 100%;
 }
 
 .footer-bottom {
   min-height: 60px;
-  width: 100%;
 }
 
 .footer p {
   font-size: 20px;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 .footer .social-list {

@@ -24,10 +24,12 @@ export default class MarkdownPreviewer extends Component {
         <div className="content-container">
           <Header />
 
-          <h3 className="toggle-theme" onClick={this.toggleTheme}>
-            Switch to {isNightlyTheme ? 'brightly' : 'nightly'} theme
-            <i className={isNightlyTheme ? 'fa fa-sun-o' : 'fa fa-moon-o'}></i>
-          </h3>
+          <div className="toggle-theme-container">
+            <button className="toggle-theme" onClick={this.toggleTheme}>
+              Switch to {isNightlyTheme ? 'brightly' : 'nightly'} theme
+              <i className={isNightlyTheme ? 'fa fa-sun-o' : 'fa fa-moon-o'}></i>
+            </button>
+          </div>
 
           <UserInput />
         </div>

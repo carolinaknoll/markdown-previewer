@@ -21,19 +21,18 @@
   border: none;
   box-sizing: border-box;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 1em;
   height: 100%;
-  resize: none;
   line-height: 25px;
   overflow-y: auto;
+  padding: 1.5em 0.5em 0;
+  resize: none;
   width: 100%;
-  padding: 10px;
-  font-size: 1em;
-  padding-top: 1.5em;
 }
 
 .preview-box {
   overflow-y: auto;
-  padding: 10px;
+  padding: 0.5em;
 }
 
 .input-box textarea,
@@ -43,8 +42,8 @@
 
 .brightly-theme .input-box,
 .brightly-theme .preview-box {
-  border: 1px solid #000;
   background: #cfd8dc;
+  border: 1px solid #000;
 }
 
 .nightly-theme .input-box,
