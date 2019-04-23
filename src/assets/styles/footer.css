@@ -38,10 +38,6 @@
   text-align: center;
 }
 
-.footer .social-list {
-  padding-top: 20px;
-}
-
 .footer-bottom p {
   padding-top: 15px;
 }
@@ -51,9 +47,13 @@
 }
 
 .footer .social-list {
-  margin-left: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 20px 0;
   text-align: center;
+}
+
+.footer .social-list .social-small-box a {
+  display: block;
 }
 
 .social-small-box {
