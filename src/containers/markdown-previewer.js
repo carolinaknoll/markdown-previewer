@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import UserInput from '../components/user-input/user-input';
-import Header from '../components/common/header';
-import Footer from '../components/common/footer';
+import UserInput from '../components/user-input';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 export default class MarkdownPreviewer extends Component {
   constructor(props) {
